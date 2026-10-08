@@ -69,7 +69,7 @@ export const App = () => {
             'is-light': sortReverse !== SORT_REVERSE,
           })}
           onClick={() =>
-            setSortReverse(sortReverse === SORT_REVERSE ? '' : SORT_REVERSE)
+            setSortReverse(sortReverse !== SORT_REVERSE ? SORT_REVERSE : '')
           }
         >
           Reverse
